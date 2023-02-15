@@ -15,15 +15,26 @@ class DeviceController {
     
     var devices: [Device] = []
     
+    init() {
+        load()
+    }
+    
     // MARK: - CRUD Functions
     
     func create(deviceName: String) {
         let device = Device(name: deviceName)
         devices.append(device)
+        save()
     }
     
     func toggleIsOn(device: Device) {
         device.isOn.toggle()
+        save()
+    }
+    
+    func delete(device: Device) {
+        guard let index = devices.firstIndex(of: device) else { return }
+        devices.remove(at: index)
         save()
     }
     

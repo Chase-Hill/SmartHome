@@ -11,7 +11,7 @@
         <!--Smart Home-->
         <scene sceneID="ys3-jv-S89">
             <objects>
-                <tableViewController id="cdy-Bz-leo" sceneMemberID="viewController">
+                <tableViewController id="cdy-Bz-leo" customClass="DeviceTableViewController" customModule="SmartHome" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="c7E-bX-DpU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,7 +61,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Smart Home" id="2pq-Lx-mJa">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7nW-rz-ldc"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7nW-rz-ldc">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="cdy-Bz-leo" id="yWb-A0-kYb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M3S-XL-NYY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -27,6 +27,8 @@ class DeviceTableViewController: UITableViewController {
 
         cell.updateViews(device: device)
         
+        cell.delegate = self
+        
         return cell
     }
 
@@ -54,16 +56,24 @@ class DeviceTableViewController: UITableViewController {
         
     }
     
-    /*
-    // Override to support editing the table view.
+    @IBAction func addButtonTapped(_ sender: Any) {
+        presentNewDeviceAlertController()
+    }
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
+            let deviceToDelete = DeviceController.shared.devices[indexPath.row]
+            DeviceController.shared.delete(device: deviceToDelete)
             tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
+}
 
-     */
+extension DeviceTableViewController: DeviceTableViewCellDelegate {
+    func isOnSwitchWasToggled(cell: DeviceTableViewCell) {
+        guard let index = tableView.indexPath(for: cell) else { return }
+        let device = DeviceController.shared.devices[index.row]
+        DeviceController.shared.toggleIsOn(device: device)
+        cell.updateViews(device: device)
+    }
 }

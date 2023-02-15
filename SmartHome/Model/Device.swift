@@ -18,3 +18,9 @@ class Device: Codable {
         self.id = id
     }
 }
+
+extension Device: Equatable {
+    static func == (lhs: Device, rhs: Device) -> Bool {
+        return lhs.id == rhs.id
+    }
+}
