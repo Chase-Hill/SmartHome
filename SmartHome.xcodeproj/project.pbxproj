@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AF9DD910299D70AD00376BBD /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9DD90F299D70AD00376BBD /* Device.swift */; };
 		AF9DD913299D70BC00376BBD /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9DD912299D70BC00376BBD /* DeviceController.swift */; };
+		AF9DD917299D750500376BBD /* DeviceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9DD916299D750500376BBD /* DeviceTableViewController.swift */; };
+		AF9DD91A299D75DE00376BBD /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9DD919299D75DE00376BBD /* DeviceTableViewCell.swift */; };
 		F78B15F127729ACE0021C4E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B15F027729ACE0021C4E0 /* AppDelegate.swift */; };
 		F78B15F327729ACE0021C4E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B15F227729ACE0021C4E0 /* SceneDelegate.swift */; };
 		F78B15F827729ACE0021C4E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78B15F627729ACE0021C4E0 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		AF9DD90F299D70AD00376BBD /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		AF9DD912299D70BC00376BBD /* DeviceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
+		AF9DD916299D750500376BBD /* DeviceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewController.swift; sourceTree = "<group>"; };
+		AF9DD919299D75DE00376BBD /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
 		F78B15ED27729ACE0021C4E0 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78B15F027729ACE0021C4E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F78B15F227729ACE0021C4E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				AF9DD915299D70C800376BBD /* Model Controller */,
+				AF9DD918299D750A00376BBD /* View Controller */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -70,6 +75,22 @@
 				AF9DD912299D70BC00376BBD /* DeviceController.swift */,
 			);
 			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		AF9DD918299D750A00376BBD /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF9DD916299D750500376BBD /* DeviceTableViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		AF9DD91B299D75E100376BBD /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AF9DD919299D75DE00376BBD /* DeviceTableViewCell.swift */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 		F78B15E427729ACE0021C4E0 = {
@@ -95,6 +116,7 @@
 				41D325E1283685D800597C30 /* Storyboards */,
 				AF9DD911299D70B000376BBD /* Model */,
 				AF9DD914299D70BF00376BBD /* Controllers */,
+				AF9DD91B299D75E100376BBD /* Custom Cell */,
 			);
 			path = SmartHome;
 			sourceTree = "<group>";
@@ -182,6 +204,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF9DD910299D70AD00376BBD /* Device.swift in Sources */,
+				AF9DD91A299D75DE00376BBD /* DeviceTableViewCell.swift in Sources */,
+				AF9DD917299D750500376BBD /* DeviceTableViewController.swift in Sources */,
 				AF9DD913299D70BC00376BBD /* DeviceController.swift in Sources */,
 				F78B15F127729ACE0021C4E0 /* AppDelegate.swift in Sources */,
 				F78B15F327729ACE0021C4E0 /* SceneDelegate.swift in Sources */,
