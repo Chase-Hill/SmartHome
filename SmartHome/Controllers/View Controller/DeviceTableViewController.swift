@@ -25,6 +25,8 @@ class DeviceTableViewController: UITableViewController {
         
         let device = DeviceController.shared.devices[indexPath.row]
 
+        cell.updateViews(device: device)
+        
         return cell
     }
 

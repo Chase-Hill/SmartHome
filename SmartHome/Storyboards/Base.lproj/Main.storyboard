@@ -35,6 +35,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zq3-dr-ajQ">
                                                     <rect key="frame" x="288" y="0.0" width="51" height="32"/>
+                                                    <connections>
+                                                        <action selector="switchToggled:" destination="qgc-G8-dfO" eventType="valueChanged" id="bPR-CN-Jzb"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                         </stackView>
@@ -46,6 +49,10 @@
                                         <constraint firstItem="yoR-12-aFp" firstAttribute="leading" secondItem="qYR-Ce-8kn" secondAttribute="leadingMargin" constant="8" id="n9N-26-M9L"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="deviceNameLabel" destination="xSJ-1y-RXb" id="eIo-JZ-PnG"/>
+                                    <outlet property="deviceSwitch" destination="zq3-dr-ajQ" id="Tzf-fL-pGj"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
