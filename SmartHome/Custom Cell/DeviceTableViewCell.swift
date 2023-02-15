@@ -7,6 +7,12 @@
 
 import UIKit
 
+protocol DeviceTableViewCellDelegate: AnyObject {
+    
+    func isOnSwitchWasToggled(cell: DeviceTableViewCell)
+    
+}
+
 class DeviceTableViewCell: UITableViewCell {
     
     // MARK: - Outlets
@@ -14,6 +20,10 @@ class DeviceTableViewCell: UITableViewCell {
     @IBOutlet weak var deviceNameLabel: UILabel!
     
     @IBOutlet weak var deviceSwitch: UISwitch!
+    
+    // MARK: - Properties
+    
+    weak var delegate: DeviceTableViewCellDelegate?
     
     // MARK: - Helper Function
     
@@ -26,6 +36,6 @@ class DeviceTableViewCell: UITableViewCell {
     // MARK: - Action
     
     @IBAction func switchToggled(_ sender: Any) {
+        delegate?.isOnSwitchWasToggled(cell: self)
     }
-    
 }
