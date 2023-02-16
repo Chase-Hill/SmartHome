@@ -11,6 +11,8 @@
 		AF9DD913299D70BC00376BBD /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9DD912299D70BC00376BBD /* DeviceController.swift */; };
 		AF9DD917299D750500376BBD /* DeviceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9DD916299D750500376BBD /* DeviceTableViewController.swift */; };
 		AF9DD91A299D75DE00376BBD /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9DD919299D75DE00376BBD /* DeviceTableViewCell.swift */; };
+		AFAF200D299EC94000740991 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAF200C299EC94000740991 /* Constants.swift */; };
+		AFAF200F299EC99B00740991 /* ToggleAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAF200E299EC99B00740991 /* ToggleAllViewController.swift */; };
 		F78B15F127729ACE0021C4E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B15F027729ACE0021C4E0 /* AppDelegate.swift */; };
 		F78B15F327729ACE0021C4E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B15F227729ACE0021C4E0 /* SceneDelegate.swift */; };
 		F78B15F827729ACE0021C4E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78B15F627729ACE0021C4E0 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		AF9DD912299D70BC00376BBD /* DeviceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
 		AF9DD916299D750500376BBD /* DeviceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewController.swift; sourceTree = "<group>"; };
 		AF9DD919299D75DE00376BBD /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
+		AFAF200C299EC94000740991 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AFAF200E299EC99B00740991 /* ToggleAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleAllViewController.swift; sourceTree = "<group>"; };
 		F78B15ED27729ACE0021C4E0 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78B15F027729ACE0021C4E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F78B15F227729ACE0021C4E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				AF9DD916299D750500376BBD /* DeviceTableViewController.swift */,
+				AFAF200E299EC99B00740991 /* ToggleAllViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 				F78B15F227729ACE0021C4E0 /* SceneDelegate.swift */,
 				F78B15F927729AD20021C4E0 /* Assets.xcassets */,
 				F78B15FE27729AD20021C4E0 /* Info.plist */,
+				AFAF200C299EC94000740991 /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -205,8 +211,10 @@
 			files = (
 				AF9DD910299D70AD00376BBD /* Device.swift in Sources */,
 				AF9DD91A299D75DE00376BBD /* DeviceTableViewCell.swift in Sources */,
+				AFAF200F299EC99B00740991 /* ToggleAllViewController.swift in Sources */,
 				AF9DD917299D750500376BBD /* DeviceTableViewController.swift in Sources */,
 				AF9DD913299D70BC00376BBD /* DeviceController.swift in Sources */,
+				AFAF200D299EC94000740991 /* Constants.swift in Sources */,
 				F78B15F127729ACE0021C4E0 /* AppDelegate.swift in Sources */,
 				F78B15F327729ACE0021C4E0 /* SceneDelegate.swift in Sources */,
 			);
